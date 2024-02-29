@@ -43,9 +43,9 @@ match (cripto):
     case '1':
         for i in range (len(texto)):
             cifra += codificador_hex(texto[i])
+        print("Cifra:", cifra)
     
     case '2':
         for i in range (0, len(texto), 2):
             cifra += decodifica_hex(texto[i], texto[i+1])
-
-print(cifra)
+        print("Texto decriptado:", cifra)

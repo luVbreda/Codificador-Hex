@@ -54,13 +54,15 @@ int main(){
             for(unsigned int i = 0; i < strlen(texto); i++){
                 codifica_hex(texto[i], cifra);
             }
+            printf("Cifra: %s\n", cifra);
             break;
         case '2':
             for(unsigned int i = 0; i < strlen(texto); i+=2){
                 descodifica_hex(texto[i], texto[i+1], cifra);
             }
+            printf("Texto decriptado: %s\n", cifra);
             break;
     }
 
-    printf(cifra);
+    return 0;
 }
